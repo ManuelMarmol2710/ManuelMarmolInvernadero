@@ -1,0 +1,41 @@
+package Invernadero;
+
+import  java.util.ArrayList;
+
+public class Jardin {
+	
+
+public static void main(String[] args) {
+	
+	Jardin3 plant1 = new Jardin3();
+         
+    Jardin3 plant2 = new Jardin3(); 
+    
+     
+   System.out.println("Registre y Clasifique sus 2 Plantas en la Lista: ");
+    
+    ArrayList<Jardin3> misPlantasdelInver = new ArrayList<Jardin3>();
+      misPlantasdelInver.add(plant1);  
+      System.out.println("Numero de Lista plantas:" + misPlantasdelInver.size());
+           for (int g = 0; g < misPlantasdelInver.size(); g++) {
+           System.out.println("La planta se encuentra en esta posicion: " + g + "  " + misPlantasdelInver.get (g) );
+         }
+       
+
+      misPlantasdelInver.add(plant2);  
+      System.out.println("\nNumero de Lista plantas:" + misPlantasdelInver.size());
+      System.out.println("Registre la segunda planta:");
+      for (int p = 1; p < misPlantasdelInver.size(); p++) {
+      System.out.println("La planta se encuentra en esta posicion: " + p + " por lo cual " + misPlantasdelInver.get (p) );
+     
+    
+     
+      
+      }
+
+   
+    	 
+
+}     
+}
+	
