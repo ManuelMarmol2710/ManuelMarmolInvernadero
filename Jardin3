@@ -1,0 +1,94 @@
+package Invernadero;
+
+import java.util.Scanner;
+
+public class Jardin3 {
+	private String planta;
+    private String tamano;
+    private String duracion;
+    private String reproduccion;
+	private Scanner pa;
+	private Scanner par;
+	private Scanner part;
+    private Scanner parte;
+ 
+  public String getPlanta() {
+	  
+	  parte = new Scanner(System.in);     
+      System.out.println("-Escriba el nombre de su planta :");
+	  planta = parte.next();
+      return planta;		
+  
+
+
+ }
+
+  public void setPlanta(String planta) {
+	  
+this.planta = planta;
+  
+  }
+  public String getTamano() {
+		part = new Scanner(System.in);     
+	                  System.out.println("-Clasifique su planta por tamaño :");
+					  System.out.println("Si es una Mata,Arbusto o Arbol: ");
+					  tamano = part.next();
+	                  return tamano;				  
+	} 
+					  
+public void setTamano(String tamano) {
+	
+	this.tamano = tamano;
+	
+	}
+	
+	
+	public String getReproduccion() {
+		par = new Scanner(System.in); 
+		
+	System.out.println("-Clasifique su planta por tipo de reproduccion :"); 
+					   System.out.println("Si es por Esporas o Semillas: ");
+					   reproduccion = par.next();			       
+	                   return reproduccion;
+	}			   
+	
+public void setReproduccion(String reproduccion) {				   
+	
+	      this.reproduccion = reproduccion;
+		
+	}
+ 	 
+	 public String getDuracion() {
+		 pa = new Scanner(System.in); 
+		 System.out.println("-Clasifique su planta por tipo de duracion :"); 
+	     System.out.println("Si es perenne, binuales o anuales: ");
+	     duracion = pa.next();
+	     return duracion; 
+	 } 
+	 
+	 public void setDuracion(String duracion) {
+	 
+		 this.duracion = duracion;
+		 
+		 
+
+	  }
+	 @Override
+     public String toString() {
+		 return "\nPlanta: "+ getPlanta() + "\nTamaño: " + getTamano() + "\nReproduccion: "+ getReproduccion() + "\nDuracion: "+ getDuracion();
+
+	     
+		 
+	 }
+	 
+	
+	 
+	
+	 
+	 
+	 
+	 
+	 
+	 
+}
+		
